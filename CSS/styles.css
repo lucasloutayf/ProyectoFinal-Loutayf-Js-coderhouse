@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: hsla(119, 77%, 83%, 1);
+    background-image: radial-gradient(circle at 5% 1%, hsla(196, 76%, 61%, 1) 7%, transparent 84%), radial-gradient(circle at 7% 81%, hsla(130, 91%, 91%, 1) 16%, transparent 53%), radial-gradient(circle at 11% 29%, hsla(159, 97%, 75%, 1) 8%, transparent 74%), radial-gradient(circle at 39% 52%, hsla(95, 93%, 64%, 1) 6%, transparent 68%), radial-gradient(circle at 90% 50%, hsla(64, 94%, 89%, 1) 2%, transparent 85%);
+    background-blend-mode: normal, normal, normal, normal, normal;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: border 0.3s ease;
+}
+
+input:focus {
+    border: 1px solid #4CAF50;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+#result-text {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#simulation-history {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.simulation-item {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.simulation-item span {
+    font-weight: bold;
+}

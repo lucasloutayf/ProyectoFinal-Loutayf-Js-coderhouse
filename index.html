@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Impuestos</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulación de Cálculo de Impuestos</h1>
+
+        <form id="tax-form">
+            <label for="income">Ingrese su ingreso anual:</label>
+            <input type="number" id="income" placeholder="Ejemplo: 30000" required>
+            <button type="submit">Calcular</button>
+        </form>
+
+        <div class="result">
+            <p id="result-text"></p>
+        </div>
+
+        <h2>Historial de Simulaciones</h2>
+        <div id="simulation-history"></div>
+    </div>
+
+    <script src="JS/app.js"></script>
+</body>
+</html>
